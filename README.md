@@ -103,22 +103,21 @@
     <div class="heart">❤️</div>
     <h1>คิดถึงอ้วนที่สุดเลย</h1>
     <p>
-      พี่ไม่มีไรทำนั่งเล่นอยู่<br />
-      กินข้าวเยอะมั้ย<br />
-      อ้วนจะกลับบ้านตอนไหน
+      พี่ไม่มีไรทำนั่งเล่นเขียนโค้ดอยู่<br />
+      กินข้าวเยอะมั้ย??
+      <br />
+      อ้วนทำไรอยู่??
     </p>
-
-    <!-- รูปที่กดได้ -->
+    
     <img
-      src="https://scontent.futp1-2.fna.fbcdn.net/v/t1.15752-9/491266456_1731328170788693_3260349409939415489_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=8gtf1wxEgpMQ7kNvwHwAfBP&_nc_oc=AdnV_l2MP0jR7iwG4Nj5aNivKolkt37uX6nZfQqCTi1C53tIWNdkhLKnuQEMf5ezw4DVfAz22m5Ay-XHDPUvh01X&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.futp1-2.fna&oh=03_Q7cD2QEYa8XFjutKbrswF3rOQFyTUDumVJpUzzei4EJgF2SsXw&oe=68510968"
+      src="https://scontent.cdninstagram.com/v/t51.75761-15/496347416_17938158459001850_8112075224366874179_n.png?_nc_cat=106&ccb=7-5&_nc_sid=ecb677&_nc_ohc=obhP5yk6QaIQ7kNvwGvlJ_X&_nc_oc=AdkN-OumNdS4yP5TW5V1OIJCh9xUPBwciYM_-LpQj02M7yc9xjNOQopjeIalu608ZlXXrp2nUKRW4_Ovg_GRy-yP&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=kygOasa-YzaZ9XavwtDShg&oh=00_AfIQmIqFb3q39ncDXzZHsBuaDbBKVHQVSXZi9gBX0PG8wQ&oe=682F741E"
       alt="รูปอ้วน"
       class="image-button"
       onclick="showMessage()"
     />
-
-    <!-- กล่องข้อความที่แสดงหลังคลิก -->
+    
     <div class="popup" id="popupMessage">
-      พี่ไปบ้านเพื่อนนะ
+      พี่ไปบ้านเพื่อนนะะะะะ
      
     </div>
 
