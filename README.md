@@ -2,9 +2,7 @@
 <html lang="th">
 <head>
   <div class="container-lg px-3 my-5 markdown-body">
- <!DOCTYPE html>
-<html lang="th">
-<head>
+    : : before
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>คิดถึงอ้วนที่สุดเลย 💖</title>
