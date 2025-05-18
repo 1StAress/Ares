@@ -74,7 +74,6 @@
     .image-button:hover {
       transform: scale(1.05);
     }
-
     .popup {
       margin-top: 15px;
       display: none;
@@ -105,16 +104,12 @@
       กินข้าวเยอะมั้ย<br />
       อ้วนจะกลับบ้านตอนไหน
     </p>
-
-    <!-- รูปที่กดได้ -->
     <img
       src="https://scontent.futp1-2.fna.fbcdn.net/v/t1.15752-9/491266456_1731328170788693_3260349409939415489_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=8gtf1wxEgpMQ7kNvwHwAfBP&_nc_oc=AdnV_l2MP0jR7iwG4Nj5aNivKolkt37uX6nZfQqCTi1C53tIWNdkhLKnuQEMf5ezw4DVfAz22m5Ay-XHDPUvh01X&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.futp1-2.fna&oh=03_Q7cD2QEYa8XFjutKbrswF3rOQFyTUDumVJpUzzei4EJgF2SsXw&oe=68510968"
       alt="รูปอ้วน"
       class="image-button"
       onclick="showMessage()"
     />
-
-    <!-- กล่องข้อความที่แสดงหลังคลิก -->
     <div class="popup" id="popupMessage">
       พี่ไปบ้านเพื่อนนะ
      
