@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- สำคัญสำหรับมือถือ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       background-color: #ffe6f0;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-family: Arial, sans-serif;
       height: 100vh;
       overflow: hidden;
       position: relative;
@@ -19,20 +19,20 @@
       position: relative;
       z-index: 1;
       text-align: center;
-      padding: 60px 20px;
+      padding-top: 60px;
     }
 
     h1 {
       font-size: 32px;
       color: #d63384;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     input {
       display: block;
       margin: 15px auto;
       padding: 12px;
-      width: 100%;
+      width: 80%;
       max-width: 300px;
       font-size: 16px;
       border: 2px solid #d63384;
@@ -49,7 +49,7 @@
       border: none;
       border-radius: 10px;
       cursor: pointer;
-      width: 100%;
+      width: 80%;
       max-width: 300px;
     }
 
@@ -57,6 +57,7 @@
       position: absolute;
       color: #ff99cc;
       animation: floatUp linear infinite;
+      user-select: none;
     }
 
     @keyframes floatUp {
@@ -75,15 +76,15 @@
 
 <div class="container">
   <h1>Login</h1>
-  <input type="text" placeholder="Date of Birth">
-  <input type="text" placeholder="Favorite Animal">
+  <input type="text" placeholder="Date of Birth" />
+  <input type="text" placeholder="Favorite Animal" />
   <button>Sign In</button>
 </div>
 
 <script>
   function createHeart() {
     const heart = document.createElement('div');
-    heart.classList.add('heart');
+    heart.className = 'heart';
     heart.innerHTML = '❤️';
     heart.style.left = Math.random() * 100 + 'vw';
     heart.style.fontSize = (Math.random() * 16 + 10) + 'px';
