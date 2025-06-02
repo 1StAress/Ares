@@ -60,3 +60,43 @@
     }
 
     @keyframes floatUp {
+      from {
+        transform: translateY(100vh);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-10vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Login</h1>
+  <input type="text" placeholder="Date of Birth">
+  <input type="text" placeholder="Favorite Animal">
+  <button>Sign In</button>
+</div>
+
+<script>
+  function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.innerHTML = '❤️';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.fontSize = (Math.random() * 16 + 10) + 'px';
+    heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 10000);
+  }
+
+  setInterval(createHeart, 500);
+</script>
+
+</body>
+</html>
