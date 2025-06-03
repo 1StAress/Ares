@@ -11,99 +11,116 @@
       padding: 0;
     }
 
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
     body {
-      background-color: #ffe6f0;
-      font-family: Arial, sans-serif;
-      height: 100vh;
+      background: url('https://i.imgur.com/6RMhx.gif') no-repeat center center/cover;
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden;
-      position: relative;
+      padding: 20px;
     }
 
-    .container {
-      background-color: rgba(255, 255, 255, 0);
+    .login-box {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      padding: 30px;
+      width: 100%;
+      max-width: 340px;
+      color: #fff;
+    }
+
+    .login-box h2 {
       text-align: center;
-      z-index: 1;
-      width: 90%;
-      max-width: 320px;
+      margin-bottom: 20px;
+      font-size: 24px;
     }
 
-    h1 {
-      font-size: 28px;
-      color: #d63384;
-      margin-bottom: 25px;
+    .input-group {
+      margin-bottom: 15px;
     }
 
-    input {
-      display: block;
+    .input-group input {
       width: 100%;
-      margin: 10px 0;
       padding: 12px;
-      font-size: 16px;
-      border: 2px solid #d63384;
       border-radius: 10px;
-    }
-
-    button {
-      width: 100%;
-      padding: 12px;
-      font-size: 18px;
-      background-color: #ff66a3;
-      color: white;
       border: none;
-      border-radius: 10px;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    .input-group input::placeholder {
+      color: #ddd;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+
+    .options label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .options a {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background: #ffffff;
+      border: none;
+      border-radius: 25px;
+      color: #444;
+      font-weight: bold;
       cursor: pointer;
+      font-size: 16px;
+    }
+
+    .register-link {
       margin-top: 10px;
+      font-size: 12px;
+      text-align: center;
     }
 
-    .heart {
-      position: absolute;
-      color: #ff99cc;
-      animation: floatUp linear infinite;
-      user-select: none;
-      z-index: 0;
-    }
-
-    @keyframes floatUp {
-      from {
-        transform: translateY(100vh);
-        opacity: 1;
-      }
-      to {
-        transform: translateY(-10vh);
-        opacity: 0;
-      }
+    .register-link a {
+      color: #fff;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Login</h1>
-    <input type="text" placeholder="Date of Birth" />
-    <input type="text" placeholder="Favorite Animal" />
-    <button>Sign In</button>
+  <div class="login-box">
+    <h2>Login</h2>
+    <div class="input-group">
+      <input type="text" placeholder="Email ID">
+    </div>
+    <div class="input-group">
+      <input type="password" placeholder="Password">
+    </div>
+    <div class="options">
+      <label><input type="checkbox"> Remember me</label>
+      <a href="#">Forgot Password?</a>
+    </div>
+    <button class="login-btn">Login</button>
+    <div class="register-link">
+      Don't have an account? <a href="#">Register</a>
+    </div>
   </div>
-
-  <script>
-    function createHeart() {
-      const heart = document.createElement('div');
-      heart.className = 'heart';
-      heart.innerHTML = '❤️';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.fontSize = (Math.random() * 16 + 10) + 'px';
-      heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
-      document.body.appendChild(heart);
-
-      setTimeout(() => {
-        heart.remove();
-      }, 10000);
-    }
-
-    setInterval(createHeart, 500);
-  </script>
 
 </body>
 </html>
